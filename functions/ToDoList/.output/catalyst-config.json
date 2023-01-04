@@ -1,0 +1,10 @@
+{
+	"deployment": {
+		"name": "ToDoList",
+		"stack": "java8",
+		"type": "advancedio"
+	},
+	"execution": {
+		"main": "ToDoList"
+	}
+}

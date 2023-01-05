@@ -8,7 +8,7 @@ import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.json.JSONObject;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import com.catalyst.advanced.CatalystAdvancedIOHandler;
@@ -52,6 +52,9 @@ public class ToDoList implements CatalystAdvancedIOHandler {
 			// GET method gets data from the TodoItems table in the Data Store.
 			if(method.equals(GET) && uri.equals("/all")){
 
+				// ============== Resquest Format =============
+				// http://localhost:3000/server/ToDoList/all?page=1&perPage=2
+
 				// For hasMore - boolean
 				Integer page = Integer.parseInt(request.getParameter("page"));
 				Integer perPage = Integer.parseInt(request.getParameter("perPage"));
@@ -60,7 +63,7 @@ public class ToDoList implements CatalystAdvancedIOHandler {
 
 				Boolean hasMore = totalTodos > page * perPage;
 
-				// todoItems
+				// todoItems - ArrayList of HashMap
 				ArrayList<HashMap<String, String>> todoItems = new ArrayList<>();
 				
 				// Fetching and Adding Notes to ArrayList
@@ -107,7 +110,10 @@ public class ToDoList implements CatalystAdvancedIOHandler {
 
 			// ==================== POST =================
 			// POST method sends data to persist in the TodoItems table in the Data Store
-			else if(method.equals(POST) && uri.equals("add")) {
+			else if(method.equals(POST) && uri.equals("/add")) {
+
+				// ============== Resquest Format =============
+				// http://localhost:3000/server/ToDoList/add
 
 				// Parse body as JSON
 				JSONParser jsonParser = new JSONParser();
@@ -125,6 +131,19 @@ public class ToDoList implements CatalystAdvancedIOHandler {
 				ZCRowObject todoItem = ZCObject.getInstance().getTable("TodoItems").insertRow(row);
 
 				// Sending Response
+				/*
+					=========== Response Format ===========
+					{
+						"data": {
+							"todoItem": {
+							"notes": "Note 2 from RESTClient",
+							"id": "3040000000019025"
+							}
+						},
+						"status": "success"
+					}
+					=======================================
+				 */
 				response.setStatus(200);
 				responseData.put("status", "success");
 				responseData.put("data", new JSONObject(){
@@ -142,7 +161,12 @@ public class ToDoList implements CatalystAdvancedIOHandler {
 			// ==================== DELETE =================
 			// Delete method deletes the selected items from the Data Store
 			else if(method.equals(DELETE)){
+				// ROWID of the Item
+				// System.out.println(uri.substring(1));
 
+				// ============== Resquest Format =============
+				// http://localhost:3000/server/ToDoList/3040000000021004
+				
 				// Create Table Instance
 				ZCTable table = ZCObject.getInstance().getTable("ToDOItems");
 
@@ -150,6 +174,18 @@ public class ToDoList implements CatalystAdvancedIOHandler {
 				table.deleteRow(Long.parseLong(uri.substring(1)));
 
 				// Sending Response
+				/*
+					=========== Response Format ===========
+					{
+						"data": {
+							"todoItem": {
+							"id": "3040000000021004"
+							}
+						},
+						"status": "success"
+					}
+					=======================================
+				 */
 				response.setStatus(200);
 				responseData.put("status", "success");
 				responseData.put("data", new JSONObject(){

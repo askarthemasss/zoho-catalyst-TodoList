@@ -1,0 +1,329 @@
+[debug] [2023-01-05T06:32:49.138Z] : 
+[debug] [2023-01-05T06:32:49.139Z] : ----------------------------------------------------------------------
+[debug] [2023-01-05T06:32:49.139Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2023-01-05T06:32:49.139Z] : CLI Version:  1.13.3
+[debug] [2023-01-05T06:32:49.140Z] : Platform:     linux
+[debug] [2023-01-05T06:32:49.140Z] : Node Version: v18.12.1
+[debug] [2023-01-05T06:32:49.141Z] : Time:         Thu Jan 05 2023 12:02:49 GMT+0530 (India Standard Time)
+[debug] [2023-01-05T06:32:49.141Z] : ----------------------------------------------------------------------
+[debug] [2023-01-05T06:32:49.141Z] : 
+[debug] [2023-01-05T06:32:49.717Z] : > authorizing via signed-in user option
+[debug] [2023-01-05T06:32:49.717Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-01-05T06:32:49.725Z] : > refreshing access token <
+[debug] [2023-01-05T06:32:49.726Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2023-01-05T06:32:50.533Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 06:32:50 GMT","content-type":"application/json;charset=UTF-8","content-length":"2727","connection":"close","set-cookie":["6e73717622=4440853cd702ab2a51402c119608ee85; Path=/","iamcsr=647f2a2a-9f84-48c2-b75d-8a977ca17504;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=647f2a2a-9f84-48c2-b75d-8a977ca17504;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T06:32:50.546Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001 
+
+[debug] [2023-01-05T06:32:51.143Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 06:32:51 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=47ef09d1-bcba-4726-8fe4-7eacf4267faf;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=47ef09d1-bcba-4726-8fe4-7eacf4267faf;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T06:32:51.145Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/environment 
+
+[debug] [2023-01-05T06:32:52.066Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 06:32:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=2d451f71-4ceb-4d16-b4c4-059616c3c557;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=2d451f71-4ceb-4d16-b4c4-059616c3c557;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T06:32:52.256Z] : http port : '3000' is not available. Hence port '3001' will be used instead.
+[debug] [2023-01-05T06:32:52.261Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-01-05T06:32:53.099Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 06:32:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=600295c1-29c4-40b7-877c-7f6b668c0822;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=600295c1-29c4-40b7-877c-7f6b668c0822;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T06:32:53.103Z] : unknown eol undefined hence skipping check
+[info] [2023-01-05T06:32:53.361Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T06:32:56.034Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-01-05T06:32:56.036Z] : ℹ client[app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-01-05T06:32:56.620Z] : ℹ server[ToDoList]: URL : http://localhost:3001/server/ToDoList/
+[info] [2023-01-05T06:32:56.620Z] : 
+[info] [2023-01-05T06:33:00.124Z] : [react-plugin]: Compiled successfully!
+[info] [2023-01-05T06:33:00.124Z] : [react-plugin]: 
+[info] [2023-01-05T06:33:00.124Z] : [react-plugin]: You can now view app in the browser.
+[info] [2023-01-05T06:33:00.124Z] : [react-plugin]: 
+[info] [2023-01-05T06:33:00.124Z] : [react-plugin]:   Local:            http://localhost:3001/app/
+[info] [2023-01-05T06:33:00.124Z] : [react-plugin]:   On Your Network:  http://192.168.10.229:3001/app/
+[info] [2023-01-05T06:33:00.124Z] : [react-plugin]: 
+[info] [2023-01-05T06:33:00.125Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-01-05T06:33:00.125Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-01-05T06:33:00.125Z] : [react-plugin]: 
+[info] [2023-01-05T06:33:21.342Z] : Shutting down server
+[info] [2023-01-05T06:33:21.353Z] : 
+[info] [2023-01-05T06:33:21.353Z] : ✔ Shutdown complete
+[debug] [2023-01-05T06:33:21.354Z] : NO ERRORS REGISTERED
+[debug] [2023-01-05T06:33:21.355Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-01-05T06:33:21.355Z] : TOTAL DURATION OF COMMAND EXEC : 31648
+[debug] [2023-01-05T06:33:21.369Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-01-05T06:33:23.398Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 06:33:23 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=74487072-94cc-47da-add0-25aad85e8fa3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=74487072-94cc-47da-add0-25aad85e8fa3;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T06:59:57.190Z] : 
+[debug] [2023-01-05T06:59:57.191Z] : ----------------------------------------------------------------------
+[debug] [2023-01-05T06:59:57.191Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2023-01-05T06:59:57.191Z] : CLI Version:  1.13.3
+[debug] [2023-01-05T06:59:57.192Z] : Platform:     linux
+[debug] [2023-01-05T06:59:57.192Z] : Node Version: v18.12.1
+[debug] [2023-01-05T06:59:57.192Z] : Time:         Thu Jan 05 2023 12:29:57 GMT+0530 (India Standard Time)
+[debug] [2023-01-05T06:59:57.193Z] : ----------------------------------------------------------------------
+[debug] [2023-01-05T06:59:57.193Z] : 
+[debug] [2023-01-05T06:59:57.699Z] : > authorizing via signed-in user option
+[debug] [2023-01-05T06:59:57.700Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-01-05T06:59:57.708Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001 
+
+[debug] [2023-01-05T06:59:58.894Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 06:59:58 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=c5347061-48de-4fc4-88c2-371469287733;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c5347061-48de-4fc4-88c2-371469287733;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T06:59:58.900Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/environment 
+
+[debug] [2023-01-05T06:59:59.369Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 06:59:59 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=3769f727-3369-462b-a9a7-46e87d057ac4;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3769f727-3369-462b-a9a7-46e87d057ac4;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T06:59:59.583Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-01-05T07:00:00.071Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 07:00:00 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=36e2dacf-4d87-4f77-9035-fad28d19b127;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=36e2dacf-4d87-4f77-9035-fad28d19b127;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T07:00:00.076Z] : unknown eol undefined hence skipping check
+[info] [2023-01-05T07:00:00.305Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T07:00:03.590Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-01-05T07:00:03.592Z] : ℹ client[app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-01-05T07:00:04.280Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-05T07:00:04.280Z] : 
+[info] [2023-01-05T07:00:07.680Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-05T07:00:07.680Z] : [react-plugin]: [eslint] 
+src/index.js
+  Line 2:8:  'ReactDOM' is defined but never used  no-unused-vars
+[info] [2023-01-05T07:00:07.680Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-05T07:00:07.680Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[debug] [2023-01-05T07:00:11.541Z] : proxy closed
+[debug] [2023-01-05T07:00:15.048Z] : proxy closed
+[info] [2023-01-05T07:00:54.223Z] : [react-plugin]: Compiling...
+[info] [2023-01-05T07:00:54.728Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-05T07:00:54.728Z] : [react-plugin]: [eslint] 
+src/index.js
+  Line 5:10:  'createRoot' is defined but never used  no-unused-vars
+[info] [2023-01-05T07:00:54.728Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-05T07:00:54.729Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-05T07:02:12.690Z] : [react-plugin]: Compiling...
+[info] [2023-01-05T07:02:12.933Z] : [react-plugin]: Compiled successfully!
+[info] [2023-01-05T07:02:12.933Z] : [react-plugin]: 
+[info] [2023-01-05T07:02:12.933Z] : [react-plugin]: You can now view app in the browser.
+[info] [2023-01-05T07:02:12.933Z] : [react-plugin]: 
+[info] [2023-01-05T07:02:12.933Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-01-05T07:02:12.933Z] : [react-plugin]:   On Your Network:  http://192.168.10.229:3000/app/
+[info] [2023-01-05T07:02:12.934Z] : [react-plugin]: 
+[info] [2023-01-05T07:02:12.934Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-01-05T07:02:12.934Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-01-05T07:02:12.934Z] : [react-plugin]: 
+[info] [2023-01-05T07:04:55.081Z] : 
+change of ToDoList.java in ToDoList detected. Preparing your function, please wait...
+[info] [2023-01-05T07:04:55.288Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T07:04:56.026Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-05T07:04:56.026Z] : 
+[info] [2023-01-05T07:04:56.127Z] : ℹ server[ToDoList]: ready!
+[info] [2023-01-05T07:22:57.849Z] : Shutting down server
+[info] [2023-01-05T07:22:57.861Z] : 
+[info] [2023-01-05T07:22:57.862Z] : ✔ Shutdown complete
+[debug] [2023-01-05T07:22:57.863Z] : NO ERRORS REGISTERED
+[debug] [2023-01-05T07:22:57.864Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-01-05T07:22:57.864Z] : TOTAL DURATION OF COMMAND EXEC : 1380171
+[debug] [2023-01-05T07:22:57.888Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-01-05T07:22:59.996Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 07:22:59 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=80d39f34-2ff4-4bce-a6e4-d4a6643dd023;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=80d39f34-2ff4-4bce-a6e4-d4a6643dd023;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T08:39:50.284Z] : 
+[debug] [2023-01-05T08:39:50.285Z] : ----------------------------------------------------------------------
+[debug] [2023-01-05T08:39:50.285Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2023-01-05T08:39:50.286Z] : CLI Version:  1.13.3
+[debug] [2023-01-05T08:39:50.286Z] : Platform:     linux
+[debug] [2023-01-05T08:39:50.286Z] : Node Version: v18.12.1
+[debug] [2023-01-05T08:39:50.287Z] : Time:         Thu Jan 05 2023 14:09:50 GMT+0530 (India Standard Time)
+[debug] [2023-01-05T08:39:50.287Z] : ----------------------------------------------------------------------
+[debug] [2023-01-05T08:39:50.287Z] : 
+[debug] [2023-01-05T08:39:50.848Z] : > authorizing via signed-in user option
+[debug] [2023-01-05T08:39:50.848Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-01-05T08:39:50.856Z] : > refreshing access token <
+[debug] [2023-01-05T08:39:50.857Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2023-01-05T08:39:51.572Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 08:39:51 GMT","content-type":"application/json;charset=UTF-8","content-length":"2727","connection":"close","set-cookie":["6e73717622=94da0c17b67b4320ada519c299270f95; Path=/","iamcsr=faf19c25-efbc-423c-ae6f-5750cd1e9c47;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=faf19c25-efbc-423c-ae6f-5750cd1e9c47;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T08:39:51.588Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001 
+
+[debug] [2023-01-05T08:39:52.138Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 08:39:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=c1292f2f-be5c-40e7-9ff7-f81a1f820585;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c1292f2f-be5c-40e7-9ff7-f81a1f820585;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T08:39:52.141Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/environment 
+
+[debug] [2023-01-05T08:39:52.648Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 08:39:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=efb433ed-029a-487a-b07c-1e6e644323b4;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=efb433ed-029a-487a-b07c-1e6e644323b4;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T08:39:52.765Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-01-05T08:39:53.092Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 08:39:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=1eb6d6c4-3ea4-4d85-9bf8-43770145fae9;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1eb6d6c4-3ea4-4d85-9bf8-43770145fae9;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T08:39:53.096Z] : unknown eol undefined hence skipping check
+[info] [2023-01-05T08:39:53.316Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T08:39:56.256Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-01-05T08:39:56.258Z] : ℹ client[app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-01-05T08:39:56.883Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-05T08:39:56.883Z] : 
+[info] [2023-01-05T08:39:57.578Z] : [react-plugin]: Compiled successfully!
+[info] [2023-01-05T08:39:57.579Z] : [react-plugin]: 
+[info] [2023-01-05T08:39:57.579Z] : [react-plugin]: You can now view app in the browser.
+[info] [2023-01-05T08:39:57.579Z] : [react-plugin]: 
+[info] [2023-01-05T08:39:57.579Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-01-05T08:39:57.579Z] : [react-plugin]:   On Your Network:  http://192.168.10.229:3000/app/
+[info] [2023-01-05T08:39:57.579Z] : [react-plugin]: 
+[info] [2023-01-05T08:39:57.579Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-01-05T08:39:57.580Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-01-05T08:39:57.580Z] : [react-plugin]: 
+[info] [2023-01-05T08:46:40.240Z] : 
+change of ToDoList.java in ToDoList detected. Preparing your function, please wait...
+[info] [2023-01-05T08:46:40.410Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[warn] [2023-01-05T08:46:40.940Z] : ⚠ target [ToDoList] is not a valid one reason : there was a compilation error!
+[info] [2023-01-05T08:46:40.940Z] : Waiting for correction..
+[info] [2023-01-05T08:46:40.941Z] : 
+(To exit, press ^C)
+[info] [2023-01-05T08:46:56.711Z] : 
+change of ToDoList.java in ToDoList detected. Preparing your function, please wait...
+[info] [2023-01-05T08:46:56.870Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T08:46:57.416Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-05T08:46:57.416Z] : 
+[info] [2023-01-05T08:46:57.516Z] : ℹ server[ToDoList]: ready!
+[info] [2023-01-05T08:52:29.043Z] : 
+change of ToDoList.java in ToDoList detected. Preparing your function, please wait...
+[info] [2023-01-05T08:52:29.196Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[warn] [2023-01-05T08:52:29.712Z] : ⚠ target [ToDoList] is not a valid one reason : there was a compilation error!
+[info] [2023-01-05T08:52:29.712Z] : Waiting for correction..
+[info] [2023-01-05T08:52:29.712Z] : 
+(To exit, press ^C)
+[info] [2023-01-05T08:53:01.289Z] : 
+change of ToDoList.java in ToDoList detected. Preparing your function, please wait...
+[info] [2023-01-05T08:53:01.475Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T08:53:02.073Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-05T08:53:02.074Z] : 
+[info] [2023-01-05T08:53:02.175Z] : ℹ server[ToDoList]: ready!
+[info] [2023-01-05T08:53:36.002Z] : Shutting down server
+[info] [2023-01-05T08:53:36.016Z] : 
+[info] [2023-01-05T08:53:36.016Z] : ✔ Shutdown complete
+[debug] [2023-01-05T08:53:36.017Z] : NO ERRORS REGISTERED
+[debug] [2023-01-05T08:53:36.017Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-01-05T08:53:36.017Z] : TOTAL DURATION OF COMMAND EXEC : 825178
+[debug] [2023-01-05T08:53:36.027Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-01-05T08:53:37.785Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 08:53:37 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=55813dd0-9762-43a6-a2d0-8ce7dd0b6d72;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=55813dd0-9762-43a6-a2d0-8ce7dd0b6d72;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T08:54:59.690Z] : 
+[debug] [2023-01-05T08:54:59.691Z] : ----------------------------------------------------------------------
+[debug] [2023-01-05T08:54:59.691Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2023-01-05T08:54:59.691Z] : CLI Version:  1.13.3
+[debug] [2023-01-05T08:54:59.692Z] : Platform:     linux
+[debug] [2023-01-05T08:54:59.692Z] : Node Version: v18.12.1
+[debug] [2023-01-05T08:54:59.692Z] : Time:         Thu Jan 05 2023 14:24:59 GMT+0530 (India Standard Time)
+[debug] [2023-01-05T08:54:59.693Z] : ----------------------------------------------------------------------
+[debug] [2023-01-05T08:54:59.693Z] : 
+[debug] [2023-01-05T08:55:00.116Z] : > authorizing via signed-in user option
+[debug] [2023-01-05T08:55:00.117Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-01-05T08:55:00.125Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001 
+
+[debug] [2023-01-05T08:55:01.408Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 08:55:01 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=bbca4a0b-141a-4ba1-a410-b4486118cad8;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=bbca4a0b-141a-4ba1-a410-b4486118cad8;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T08:55:01.415Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/environment 
+
+[debug] [2023-01-05T08:55:02.326Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 08:55:02 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=db4078eb-619c-4403-887b-d281899f1d83;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=db4078eb-619c-4403-887b-d281899f1d83;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T08:55:02.476Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-01-05T08:55:03.266Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 08:55:03 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=b4152d3d-775e-4c5b-aa7c-567b9c26d948;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b4152d3d-775e-4c5b-aa7c-567b9c26d948;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T08:55:03.270Z] : unknown eol undefined hence skipping check
+[info] [2023-01-05T08:55:03.460Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T08:55:06.429Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-01-05T08:55:06.431Z] : ℹ client[app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-01-05T08:55:07.003Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-05T08:55:07.004Z] : 
+[info] [2023-01-05T08:55:07.511Z] : [react-plugin]: Compiled successfully!
+[info] [2023-01-05T08:55:07.511Z] : [react-plugin]: 
+[info] [2023-01-05T08:55:07.511Z] : [react-plugin]: You can now view app in the browser.
+[info] [2023-01-05T08:55:07.511Z] : [react-plugin]: 
+[info] [2023-01-05T08:55:07.511Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-01-05T08:55:07.511Z] : [react-plugin]:   On Your Network:  http://192.168.10.229:3000/app/
+[info] [2023-01-05T08:55:07.511Z] : [react-plugin]: 
+[info] [2023-01-05T08:55:07.512Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-01-05T08:55:07.512Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-01-05T08:55:07.512Z] : [react-plugin]: 
+[info] [2023-01-05T09:24:50.731Z] : 
+change of ToDoList.java in ToDoList detected. Preparing your function, please wait...
+[info] [2023-01-05T09:24:51.009Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T09:24:51.636Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-05T09:24:51.637Z] : 
+[info] [2023-01-05T09:24:51.739Z] : ℹ server[ToDoList]: ready!
+[info] [2023-01-05T09:26:10.991Z] : 
+change of ToDoList.java in ToDoList detected. Preparing your function, please wait...
+[info] [2023-01-05T09:26:11.164Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T09:26:11.752Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-05T09:26:11.752Z] : 
+[info] [2023-01-05T09:26:11.853Z] : ℹ server[ToDoList]: ready!
+[info] [2023-01-05T09:27:17.900Z] : 
+change of ToDoList.java in ToDoList detected. Preparing your function, please wait...
+[info] [2023-01-05T09:27:18.057Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T09:27:18.630Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-05T09:27:18.630Z] : 
+[info] [2023-01-05T09:27:18.731Z] : ℹ server[ToDoList]: ready!
+[info] [2023-01-05T09:31:16.908Z] : 
+change of ToDoList.java in ToDoList detected. Preparing your function, please wait...
+[info] [2023-01-05T09:31:17.065Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T09:31:17.691Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-05T09:31:17.692Z] : 
+[info] [2023-01-05T09:31:17.793Z] : ℹ server[ToDoList]: ready!
+[info] [2023-01-05T09:34:14.684Z] : 
+change of ToDoList.java in ToDoList detected. Preparing your function, please wait...
+[info] [2023-01-05T09:34:14.863Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T09:34:15.451Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-05T09:34:15.451Z] : 
+[info] [2023-01-05T09:34:15.552Z] : ℹ server[ToDoList]: ready!
+[info] [2023-01-05T09:35:08.423Z] : 
+change of ToDoList.java in ToDoList detected. Preparing your function, please wait...
+[info] [2023-01-05T09:35:08.574Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-05T09:35:09.194Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-05T09:35:09.195Z] : 
+[info] [2023-01-05T09:35:09.296Z] : ℹ server[ToDoList]: ready!
+[info] [2023-01-05T09:35:22.223Z] : Shutting down server
+[info] [2023-01-05T09:35:22.242Z] : 
+[info] [2023-01-05T09:35:22.243Z] : ✔ Shutdown complete
+[debug] [2023-01-05T09:35:22.244Z] : NO ERRORS REGISTERED
+[debug] [2023-01-05T09:35:22.245Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-01-05T09:35:22.246Z] : TOTAL DURATION OF COMMAND EXEC : 2422134
+[debug] [2023-01-05T09:35:22.268Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-01-05T09:35:24.081Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 09:35:23 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=87e073e9-bb6f-4645-9e1d-87c37ab47640;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=87e073e9-bb6f-4645-9e1d-87c37ab47640;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+

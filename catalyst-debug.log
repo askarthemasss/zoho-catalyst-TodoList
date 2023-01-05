@@ -327,3 +327,76 @@ change of ToDoList.java in ToDoList detected. Preparing your function, please wa
 [debug] [2023-01-05T09:35:24.081Z] : <<<< HTTP RESPONSE : 200
 Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 09:35:23 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=87e073e9-bb6f-4645-9e1d-87c37ab47640;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=87e073e9-bb6f-4645-9e1d-87c37ab47640;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
 
+[debug] [2023-01-05T09:46:32.364Z] : 
+[debug] [2023-01-05T09:46:32.366Z] : ----------------------------------------------------------------------
+[debug] [2023-01-05T09:46:32.367Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst deploy
+[debug] [2023-01-05T09:46:32.367Z] : CLI Version:  1.13.3
+[debug] [2023-01-05T09:46:32.368Z] : Platform:     linux
+[debug] [2023-01-05T09:46:32.369Z] : Node Version: v18.12.1
+[debug] [2023-01-05T09:46:32.375Z] : Time:         Thu Jan 05 2023 15:16:32 GMT+0530 (India Standard Time)
+[debug] [2023-01-05T09:46:32.375Z] : ----------------------------------------------------------------------
+[debug] [2023-01-05T09:46:32.376Z] : 
+[debug] [2023-01-05T09:46:33.199Z] : > authorizing via signed-in user option
+[debug] [2023-01-05T09:46:33.199Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-01-05T09:46:33.211Z] : > refreshing access token <
+[debug] [2023-01-05T09:46:33.212Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2023-01-05T09:46:34.354Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 09:46:34 GMT","content-type":"application/json;charset=UTF-8","content-length":"2727","connection":"close","set-cookie":["6e73717622=94da0c17b67b4320ada519c299270f95; Path=/","iamcsr=a805fc89-4007-4cfd-836d-32322269b73d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a805fc89-4007-4cfd-836d-32322269b73d;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T09:46:34.372Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001 
+
+[debug] [2023-01-05T09:46:35.088Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 09:46:35 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=e08b8ed0-a4cd-4a30-a6a2-e7c535def6a5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e08b8ed0-a4cd-4a30-a6a2-e7c535def6a5;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T09:46:35.090Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/environment 
+
+[debug] [2023-01-05T09:46:35.886Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 09:46:35 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=321b68e9-54ab-4538-9845-086eca825c95;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=321b68e9-54ab-4538-9845-086eca825c95;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T09:46:35.904Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-01-05T09:46:36.765Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 09:46:36 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=f748cd98-40e9-4513-a41d-e8166822fd8c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f748cd98-40e9-4513-a41d-e8166822fd8c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-05T09:46:36.770Z] : unknown eol undefined hence skipping check
+[info] [2023-01-05T09:46:36.984Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[debug] [2023-01-05T09:46:38.019Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/server/upsert 
+
+[debug] [2023-01-05T09:46:42.042Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 09:46:42 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=eb1a773d-34d8-487c-bb78-26d157685076;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=eb1a773d-34d8-487c-bb78-26d157685076;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-01-05T09:46:42.225Z] : ℹ Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2023-01-05T09:46:42.225Z] : ℹ Building Application...
+[info] [2023-01-05T09:46:44.253Z] : [react-plugin]: Creating an optimized production build...
+[info] [2023-01-05T09:46:52.335Z] : [react-plugin]: Compiled successfully.
+
+[info] [2023-01-05T09:46:52.335Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2023-01-05T09:46:52.349Z] : [react-plugin]:   58.15 kB  build/static/js/main.253576ba.js
+[info] [2023-01-05T09:46:52.349Z] : [react-plugin]:   996 B     build/static/css/main.150a1cf0.css
+[info] [2023-01-05T09:46:52.350Z] : [react-plugin]:  
+[debug] [2023-01-05T09:46:52.599Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/webapp 
+
+[debug] [2023-01-05T09:46:53.963Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 09:46:53 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=430e8130-3e83-4f90-84c0-aa7bb870ee07;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=430e8130-3e83-4f90-84c0-aa7bb870ee07;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-01-05T09:46:53.964Z] : 
+[info] [2023-01-05T09:46:53.964Z] : ℹ functions(ToDoList): URL => https://todolist-60018257358.development.catalystserverless.in/server/ToDoList/
+[info] [2023-01-05T09:46:53.965Z] : ✔ functions(ToDoList): deploy successful
+[info] [2023-01-05T09:46:53.965Z] : 
+[info] [2023-01-05T09:46:53.965Z] : ✔ client: deploy successful
+[info] [2023-01-05T09:46:53.965Z] : ℹ client: URL => https://todolist-60018257358.development.catalystserverless.in/app/index.html
+[info] [2023-01-05T09:46:53.965Z] : 
+[info] [2023-01-05T09:46:53.965Z] : ✔ Catalyst deploy complete!
+[debug] [2023-01-05T09:46:53.965Z] : NO ERRORS REGISTERED
+[debug] [2023-01-05T09:46:53.966Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2023-01-05T09:46:53.966Z] : TOTAL DURATION OF COMMAND EXEC : 20785
+[debug] [2023-01-05T09:46:53.971Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-01-05T09:46:55.869Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Thu, 05 Jan 2023 09:46:55 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=f388a459-d4af-49ff-8529-2fe9b849d577;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f388a459-d4af-49ff-8529-2fe9b849d577;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+

@@ -1,0 +1,56 @@
+:root{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+.App{
+    padding: 2rem;
+}
+
+h1{
+    background-color: beige;
+    padding: 2rem;
+    font-size: 3rem;
+}
+
+.new-todo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    border: 2px;
+    outline: auto;
+    padding: 7px;
+    width: auto;
+}
+
+.add-new{
+    float: right;
+    padding: 7px;
+    outline: auto;
+    margin-right: 1rem;
+}
+
+.all-todos{
+    /* margin: 1rem; */
+    background-color:aliceblue;
+    border-radius: 1rem;
+}
+
+li.todo{
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 1rem;
+    list-style-type: none;
+}
+
+li.todo:hover {
+    background-color: aqua;
+}

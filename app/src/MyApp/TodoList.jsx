@@ -1,6 +1,6 @@
 const TodoList = ({todos}) => {
 
-    console.log(todos)
+    // console.log(todos)
 
     return(
         <ol>

@@ -35,8 +35,12 @@ const MyApp = () => {
     }
 
     // Add New Todo
-    const handleAdd = (e) => {
-        e.preventDefault();
+    const handleAdd = async () => {
+        // e.preventDefault();
+        // console.log(newTodo);
+        await axios.post("http://localhost:3000/server/ToDoList/add",{
+            "notes" : newTodo
+        })
     }
 
 

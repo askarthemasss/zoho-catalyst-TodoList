@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react"
 import './MyApp.css'
 import TodoList from "./TodoList";
+// import WaitingPage from "./WaitingPage";
+import swal from 'sweetalert'
 
 const MyApp = () => {
     // For Loading Text
@@ -38,9 +40,30 @@ const MyApp = () => {
     const handleAdd = async () => {
         // e.preventDefault();
         // console.log(newTodo);
-        await axios.post("http://localhost:3000/server/ToDoList/add",{
-            "notes" : newTodo
+        // If Todo is empty, show alert
+        if (newTodo === "") {
+            swal("Alert!","Todo cannot be empty!")
+        }
+        // add to DB
+        else{
+            await axios.post("http://localhost:3000/server/ToDoList/add",{
+                "notes" : newTodo
+            })    
+        }
+    }
+
+    // Popup with wait message - no buttons, escape actions, - Sweetalert
+    const waitMessage = () => {
+        swal("Please wait...",{
+            closeOnClickOutside: false,
+            closeOnEsc: false,
+            buttons: false
         })
+    }
+
+    // close sweetalert popup
+    const closeSwal = () => {
+        swal.close();
     }
 
 
@@ -48,6 +71,7 @@ const MyApp = () => {
         <div className="App">
             {/* Loading Text... */}
             {isLoading && <div>Loading...</div>}
+            {/* {isLoading && <WaitingPage />} */}
             {/* Header */}
             <h1>Todos</h1>
             <main>
@@ -61,12 +85,12 @@ const MyApp = () => {
                         onChange={e => setNewTodo(e.target.value)}
                     />
                     {/* Add Button */}
-                    <button type="button" className="add-new" onClick={handleAdd}>Add</button>
-                    <p>{newTodo}</p>
+                    <input type="submit" value="Add" className="add-new" onClick={handleAdd} />
+                    {/* <p>{newTodo}</p> */}
                 </section>
                 <section className="all-todos">
-                    {toDos.length === 0 && <div>No Todos, Add some..</div>}
-                    {toDos.length !== 0 && <TodoList todos={toDos}/>}
+                    {/* {toDos.length === 0 && <div>No Todos, Add some..</div>} */}
+                    {toDos.length !== 0 ? <TodoList todos={toDos} setToDos={setToDos}/> : <div>No Todos, Add some..</div>}
                 </section>
             </main>
             {/* {toDos.length !==0 && JSON.stringify(toDos)} */}

@@ -1184,3 +1184,375 @@ Search for the keywords to learn more about each warning.
 [debug] [2023-01-10T09:58:47.651Z] : <<<< HTTP RESPONSE : 200
 Response Headers: {"server":"ZGS","date":"Tue, 10 Jan 2023 09:58:47 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=74949c5a-4cc5-4f1b-9e0f-04a71863d3e0;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=74949c5a-4cc5-4f1b-9e0f-04a71863d3e0;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
 
+[debug] [2023-01-10T10:02:02.538Z] : 
+[debug] [2023-01-10T10:02:02.539Z] : ----------------------------------------------------------------------
+[debug] [2023-01-10T10:02:02.539Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2023-01-10T10:02:02.540Z] : CLI Version:  1.13.3
+[debug] [2023-01-10T10:02:02.540Z] : Platform:     linux
+[debug] [2023-01-10T10:02:02.540Z] : Node Version: v18.12.1
+[debug] [2023-01-10T10:02:02.541Z] : Time:         Tue Jan 10 2023 15:32:02 GMT+0530 (India Standard Time)
+[debug] [2023-01-10T10:02:02.541Z] : ----------------------------------------------------------------------
+[debug] [2023-01-10T10:02:02.541Z] : 
+[debug] [2023-01-10T10:02:02.912Z] : > authorizing via signed-in user option
+[debug] [2023-01-10T10:02:02.912Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-01-10T10:02:02.921Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001 
+
+[debug] [2023-01-10T10:02:03.705Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jan 2023 10:02:03 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=ec5399f7-0669-474f-921e-3aac0c9a8f11;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ec5399f7-0669-474f-921e-3aac0c9a8f11;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-10T10:02:03.712Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/environment 
+
+[debug] [2023-01-10T10:02:04.420Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jan 2023 10:02:04 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=681804eb-e490-4913-b3b4-705b9a0e3909;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=681804eb-e490-4913-b3b4-705b9a0e3909;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-10T10:02:04.532Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-01-10T10:02:05.542Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jan 2023 10:02:05 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=995b1865-b6a1-4977-a88e-a4e09fda8d9d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=995b1865-b6a1-4977-a88e-a4e09fda8d9d;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-10T10:02:05.546Z] : unknown eol undefined hence skipping check
+[info] [2023-01-10T10:02:05.717Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-10T10:02:08.440Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-01-10T10:02:08.442Z] : ℹ client[app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-01-10T10:02:08.947Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-10T10:02:08.947Z] : 
+[info] [2023-01-10T10:02:10.820Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:02:10.820Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 56:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 65:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+
+src/MyApp/TodoList.jsx
+  Line 16:17:  'deleteTaskID' is assigned a value but never used  no-unused-vars
+[info] [2023-01-10T10:02:10.820Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:02:10.820Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:03:11.498Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:03:12.010Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:03:12.010Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 56:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 65:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+
+src/MyApp/TodoList.jsx
+  Line 16:17:  'deleteTaskID' is assigned a value but never used  no-unused-vars
+[info] [2023-01-10T10:03:12.011Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:03:12.011Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:03:30.690Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:03:31.097Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:03:31.097Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 56:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 65:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+
+src/MyApp/TodoList.jsx
+  Line 16:17:  'deleteTaskID' is assigned a value but never used  no-unused-vars
+[info] [2023-01-10T10:03:31.097Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:03:31.097Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:03:34.906Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:03:35.082Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:03:35.082Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 56:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 65:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+
+src/MyApp/TodoList.jsx
+  Line 16:17:  'deleteTaskID' is assigned a value but never used  no-unused-vars
+[info] [2023-01-10T10:03:35.082Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:03:35.082Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:09:06.461Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:09:06.693Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:09:06.694Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 56:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 65:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:09:06.694Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:09:06.694Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[debug] [2023-01-10T10:09:06.730Z] : > refreshing access token <
+[debug] [2023-01-10T10:09:06.734Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2023-01-10T10:09:07.551Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jan 2023 10:09:07 GMT","content-type":"application/json;charset=UTF-8","content-length":"2727","connection":"close","set-cookie":["6e73717622=3bcf233c3836eb7934b6f3edc257f951; Path=/","iamcsr=cc885220-526d-4975-9da5-842a7a6536c3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=cc885220-526d-4975-9da5-842a7a6536c3;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-01-10T10:09:59.527Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:09:59.793Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:09:59.793Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 56:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 65:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:09:59.793Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:09:59.793Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:12:33.556Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:12:33.933Z] : [react-plugin]: Failed to compile.
+
+[info] [2023-01-10T10:12:33.933Z] : [react-plugin]: [eslint] 
+src/MyApp/TodoList.jsx
+  Line 20:43:  'deleteTaskID' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2023-01-10T10:12:40.751Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:12:40.999Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:12:40.999Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 56:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 65:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+
+src/MyApp/TodoList.jsx
+  Line 1:8:  'axios' is defined but never used  no-unused-vars
+[info] [2023-01-10T10:12:40.999Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:12:40.999Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:15:40.026Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:15:40.309Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:15:40.309Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 56:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 65:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+
+src/MyApp/TodoList.jsx
+  Line 1:8:  'axios' is defined but never used  no-unused-vars
+[info] [2023-01-10T10:15:40.309Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:15:40.309Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:16:35.061Z] : Shutting down server
+[info] [2023-01-10T10:16:35.071Z] : 
+[info] [2023-01-10T10:16:35.071Z] : ✔ Shutdown complete
+[debug] [2023-01-10T10:16:35.072Z] : NO ERRORS REGISTERED
+[debug] [2023-01-10T10:16:35.072Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-01-10T10:16:35.072Z] : TOTAL DURATION OF COMMAND EXEC : 872166
+[debug] [2023-01-10T10:16:35.085Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-01-10T10:16:35.391Z] : Connection reset from target URL :  Url {
+  protocol: 'http:',
+  slashes: true,
+  auth: null,
+  host: '127.0.0.1:3010',
+  port: '3010',
+  hostname: '127.0.0.1',
+  hash: null,
+  search: null,
+  query: null,
+  pathname: '/',
+  path: '/',
+  href: 'http://127.0.0.1:3010/'
+}
+[debug] [2023-01-10T10:16:36.677Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jan 2023 10:16:36 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=060cb44d-f10f-402a-89df-9095a304bbd2;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=060cb44d-f10f-402a-89df-9095a304bbd2;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-10T10:19:45.161Z] : 
+[debug] [2023-01-10T10:19:45.162Z] : ----------------------------------------------------------------------
+[debug] [2023-01-10T10:19:45.162Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2023-01-10T10:19:45.162Z] : CLI Version:  1.13.3
+[debug] [2023-01-10T10:19:45.163Z] : Platform:     linux
+[debug] [2023-01-10T10:19:45.163Z] : Node Version: v18.12.1
+[debug] [2023-01-10T10:19:45.163Z] : Time:         Tue Jan 10 2023 15:49:45 GMT+0530 (India Standard Time)
+[debug] [2023-01-10T10:19:45.164Z] : ----------------------------------------------------------------------
+[debug] [2023-01-10T10:19:45.164Z] : 
+[debug] [2023-01-10T10:19:45.567Z] : > authorizing via signed-in user option
+[debug] [2023-01-10T10:19:45.567Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-01-10T10:19:45.576Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001 
+
+[debug] [2023-01-10T10:19:46.184Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jan 2023 10:19:46 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=8f11283a-b4f2-4f26-90d1-5ba0ac718548;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8f11283a-b4f2-4f26-90d1-5ba0ac718548;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-10T10:19:46.190Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/environment 
+
+[debug] [2023-01-10T10:19:47.052Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jan 2023 10:19:47 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=cdab7f1a-da42-4b7e-9f31-3e0f2bd8bfce;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=cdab7f1a-da42-4b7e-9f31-3e0f2bd8bfce;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-10T10:19:47.163Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/3040000000018001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-01-10T10:19:47.964Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jan 2023 10:19:48 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=b149c55a-448d-43c1-8bcd-fed647785cba;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b149c55a-448d-43c1-8bcd-fed647785cba;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-10T10:19:47.969Z] : unknown eol undefined hence skipping check
+[info] [2023-01-10T10:19:48.183Z] : Compiling /home/aardhraa-olugachery/Downloads/Askar Docs/Catalyst/ToDoList/functions/ToDoList/ToDoList.java
+[info] [2023-01-10T10:19:50.616Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-01-10T10:19:50.618Z] : ℹ client[app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-01-10T10:19:51.101Z] : ℹ server[ToDoList]: URL : http://localhost:3000/server/ToDoList/
+[info] [2023-01-10T10:19:51.102Z] : 
+[info] [2023-01-10T10:19:53.035Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:19:53.035Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 57:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 66:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:19:53.036Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:19:53.036Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:23:21.725Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:23:22.147Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:23:22.147Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 58:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 67:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:23:22.147Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:23:22.147Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:24:25.355Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:24:25.535Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:24:25.535Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 58:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 67:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:24:25.535Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:24:25.536Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:25:38.521Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:25:38.812Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:25:38.812Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 58:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 67:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:25:38.812Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:25:38.813Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:26:23.547Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:26:23.827Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:26:23.827Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 58:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 67:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:26:23.827Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:26:23.827Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:26:41.303Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:26:41.505Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:26:41.505Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 58:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 67:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:26:41.505Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:26:41.505Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:29:13.512Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:29:13.776Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:29:13.776Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 58:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 67:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:29:13.777Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:29:13.777Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:31:36.043Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:31:36.391Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:31:36.391Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 58:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 67:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:31:36.391Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:31:36.391Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:31:50.788Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:31:50.960Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:31:50.960Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 58:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 67:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:31:50.960Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:31:50.960Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:40:33.542Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:40:33.879Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:40:33.879Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 58:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 67:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:40:33.879Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:40:33.879Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T10:43:27.861Z] : [react-plugin]: Compiling...
+[info] [2023-01-10T10:43:27.985Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-01-10T10:43:27.985Z] : [react-plugin]: [eslint] 
+src/MyApp/MyApp.jsx
+  Line 13:12:  'hasMore' is assigned a value but never used      no-unused-vars
+  Line 58:11:  'waitMessage' is assigned a value but never used  no-unused-vars
+  Line 67:11:  'closeSwal' is assigned a value but never used    no-unused-vars
+[info] [2023-01-10T10:43:27.985Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-01-10T10:43:27.985Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-01-10T11:36:44.569Z] : Shutting down server
+[info] [2023-01-10T11:36:44.583Z] : 
+[info] [2023-01-10T11:36:44.584Z] : ✔ Shutdown complete
+[debug] [2023-01-10T11:36:44.586Z] : NO ERRORS REGISTERED
+[debug] [2023-01-10T11:36:44.587Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-01-10T11:36:44.587Z] : TOTAL DURATION OF COMMAND EXEC : 4619026
+[debug] [2023-01-10T11:36:44.604Z] : > refreshing access token <
+[debug] [2023-01-10T11:36:44.606Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2023-01-10T11:36:45.918Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jan 2023 11:36:45 GMT","content-type":"application/json;charset=UTF-8","content-length":"2727","connection":"close","set-cookie":["6e73717622=4440853cd702ab2a51402c119608ee85; Path=/","iamcsr=ed2f17a7-773a-49a4-8178-e045cb7b0a6b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ed2f17a7-773a-49a4-8178-e045cb7b0a6b;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-01-10T11:36:45.930Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-01-10T11:36:48.081Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 10 Jan 2023 11:36:48 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=38c94d4a-371f-4ff8-99f2-a70dfdfff526;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=38c94d4a-371f-4ff8-99f2-a70dfdfff526;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+

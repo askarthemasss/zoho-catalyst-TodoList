@@ -46,9 +46,11 @@ const MyApp = () => {
         }
         // add to DB
         else{
-            await axios.post("http://localhost:3000/server/ToDoList/add",{
+            let response = await axios.post("http://localhost:3000/server/ToDoList/add",{
                 "notes" : newTodo
-            })    
+            })
+            setToDos(prev => [...prev, response.data.data.todoItem])
+            // console.log(toDos);
         }
     }
 
